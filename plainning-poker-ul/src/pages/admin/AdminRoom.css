@@ -1,0 +1,62 @@
+.my-container {
+  padding-top: 115px;
+  margin: 0px 200px;
+}
+
+.admin-room-container {
+  background-color: #8cb8c5;
+  height: 100vh;
+}
+
+.white-board {
+  background-color: white;
+  border-radius: 6px;
+  height: 70vh;
+}
+
+.icon-room {
+  background-color: white;
+  height: 10vh;
+  border-radius: 6px;
+}
+
+.label-room {
+  background-color: white;
+  height: 15vh;
+  border-radius: 6px;
+}
+
+.label-room label {
+  font-size: 45px;
+  text-align: center;
+}
+
+.icon-history {
+  background-color: white;
+  margin: 28px 0;
+  height: 10vh;
+  border-radius: 6px;
+}
+
+.label-history {
+  background-color: white;
+  margin: 28px 0;
+  height: 24vh;
+  border-radius: 6px;
+}
+
+.label-history textarea {
+  margin: 33px 41px;
+}
+
+.icon-profiles {
+  background-color: white;
+  height: 10vh;
+  border-radius: 6px;
+}
+
+.label-profiles {
+  background-color: white;
+  height: 24vh;
+  border-radius: 6px;
+}
