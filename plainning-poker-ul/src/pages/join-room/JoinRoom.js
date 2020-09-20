@@ -23,7 +23,7 @@ const JoinRoom = ({ match }) => {
         <div className="JoinRoom-column-left">
           <div className="JoinRoom-wrapper">
             <div className="JoinRoom-middle">
-              Logo
+              <img id="img-door" src="/assets/door.jpg"></img>
               <div className="JoinRoom-inside">
                 Entrar na sala
                 <input
