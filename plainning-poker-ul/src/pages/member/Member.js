@@ -31,7 +31,7 @@ const Member = ({ match }) => {
               </div>
             </div>
             <div className="col-md-4 members-page">
-              <div className="history-label">ASDFASDF</div>
+              <div className="history-label">Descrição da história</div>
             </div>
           </div>
         </div>
