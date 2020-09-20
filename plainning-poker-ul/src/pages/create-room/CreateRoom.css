@@ -46,7 +46,7 @@
 }
 
 .CreateRoom-wrapper {
-  background-color: #a2a2a2;
+  background-color: #dedede;
   height: 90%;
   padding: 50px;
   max-width: 515px;
@@ -94,7 +94,7 @@
 
 .CreateRoom-middle button:hover {
   background-color: #6bbbda;
-  border: none;
+  border: 1px solid #6bbbda;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -107,11 +107,14 @@
   margin-top: 18px;
 }
 
-@keyframes CreateRoom-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CreateRoom-tablet-button {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #383838;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 100px;
+  box-shadow: -5px 5px 5px -5px rgba(0, 0, 0, 0.45);
 }

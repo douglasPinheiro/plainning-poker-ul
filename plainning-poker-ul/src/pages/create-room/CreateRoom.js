@@ -29,6 +29,7 @@ const CreateRoom = () => {
                 />
               </div>
               <Button onClick={submitRoom}>Criar</Button>
+              <div className="CreateRoom-tablet-button"></div>
             </div>
           </div>
         </div>
