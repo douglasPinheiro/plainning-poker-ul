@@ -1,24 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CreateRoom.css";
 import Button from "react-bootstrap/Button";
+import { createRoom } from "../../services/api";
 
 function CreateRoom() {
+  const [roomName, setRoomName] = useState("");
+
+  const submitRoom = () => {
+    createRoom(roomName, "admin");
+  };
+
   return (
     <div className="CreateRoom">
       <div className="CreateRoom-row">
-        <div className="CreateRoom-column">
+        <div className="CreateRoom-column-left">
           <div className="CreateRoom-wrapper">
             <div className="CreateRoom-middle">
-              Criar sala
+              Logo
               <div className="CreateRoom-inside">
-                Nome da sala
-                <input />
+                Criar da sala
+                <input
+                  placeholder="Nome"
+                  onKeyDown={(e) => setRoomName(e.target.value)}
+                />
               </div>
-              <Button>Criar</Button>
+              <Button onClick={submitRoom}>Criar</Button>
             </div>
           </div>
         </div>
-        <div className="CreateRoom-column"></div>
+        <div className="CreateRoom-column-right">
+          <img src="assets/board.png" alt="board"></img>
+        </div>
       </div>
     </div>
   );

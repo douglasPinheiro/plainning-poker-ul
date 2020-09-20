@@ -31,16 +31,27 @@
   height: 80vh;
 }
 
-.CreateRoom-column {
-  flex: 50%;
+.CreateRoom-column-left {
+  flex: 40%;
+}
+
+.CreateRoom-column-right {
+  flex: 60%;
+}
+
+.CreateRoom-column-right img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -30px;
 }
 
 .CreateRoom-wrapper {
   background-color: #a2a2a2;
   height: 90%;
   padding: 50px;
-  max-width: 100%;
-  margin: 0px 70px;
+  max-width: 515px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 20px;
   text-align: center;
 }
@@ -61,8 +72,8 @@
   background-color: #9cd5ea;
   color: black;
   text-transform: uppercase;
-  height: 120px;
-  width: 80%;
+  height: 136px;
+  width: 87%;
   margin-top: 90px;
   padding-top: 20px;
   margin-left: auto;
