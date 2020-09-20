@@ -1,0 +1,18 @@
+.row-profile {
+  padding: 10px;
+}
+
+.user-container {
+  background-color: rgb(21 19 20);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.members-username {
+  padding: 18px 20px;
+  position: absolute;
+  color: white;
+  font-size: 22px;
+}

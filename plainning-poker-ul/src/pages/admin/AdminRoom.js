@@ -46,6 +46,10 @@ const AdminRoom = () => {
               <div className="col-md-9">
                 <div className="label-profiles">
                   <Members></Members>
+                  <Members></Members>
+                  <Members></Members>
+                  <Members></Members>
+                  <Members></Members>
                 </div>
               </div>
             </div>

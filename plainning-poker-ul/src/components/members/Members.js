@@ -1,18 +1,12 @@
 import React from "react";
+import "./Members.css";
 
 const Members = ({ username }) => {
   return (
-    <div className="poker-card">
-      <div className="card-number">{username}</div>
-      <div className="card-square">
-        <img
-          src="../assets/logo.jpeg"
-          alt="card"
-          className="card-logo"
-          id="logo-small"
-        ></img>
+    <div className="row-profile">
+      <div className="user-container">
+        <div className="members-username">{username}RN</div>
       </div>
-      <div className="card-number card-number-bottom">{username}</div>
     </div>
   );
 };
