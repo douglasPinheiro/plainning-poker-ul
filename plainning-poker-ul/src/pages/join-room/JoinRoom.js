@@ -13,7 +13,7 @@ const JoinRoom = ({ match }) => {
     joinRoom(roomId, username).then((r) => {
       const user = r.data.participants.find((d) => d.name === username);
       console.log(user);
-      history.push(`/member/${r.data.code}/${user._id}`);
+      history.push(`/member/${r.data._id}/${user._id}`);
     });
   };
 

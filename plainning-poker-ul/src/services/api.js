@@ -16,3 +16,7 @@ export const joinRoom = (roomId, userName) => {
     name: userName,
   });
 };
+
+export const getRoom = (roomId) => {
+  return instance.get(`rooms/${roomId}`);
+};

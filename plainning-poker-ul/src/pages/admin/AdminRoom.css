@@ -24,6 +24,9 @@
   background-color: white;
   height: 15vh;
   border-radius: 6px;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .label-room label {
@@ -55,9 +58,49 @@
   border-radius: 6px;
 }
 
+.label-profiles-container {
+  display: flex;
+}
+
 .label-profiles {
   background-color: white;
   height: 24vh;
   border-radius: 6px;
-  display: flex;
+}
+
+.button-share {
+  padding: 10px;
+  padding-top: 84px;
+  text-align: right;
+}
+
+.reset-button {
+  padding: 10px;
+  padding-top: 146px;
+  text-align: right;
+}
+
+.button-share button,
+.reset-button button {
+  background-color: #6bbbda;
+  border: 1px solid #9cd5ea;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.button-share button:hover,
+.reset-button button:hover,
+.button-share button:focus,
+.reset-button button:focus,
+.button-share button:active,
+.reset-button button:active {
+  background-color: #6bbbda;
+  border: 1px solid #6bbbda;
+}
+
+.button-share .copied,
+.button-share .copied:focus,
+.button-share .copied:active,
+.button-share .copied:focus-within,
+.button-share .copied:visited {
+  background-color: green;
 }

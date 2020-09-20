@@ -63,3 +63,7 @@
 .description-container {
   width: 75%;
 }
+
+.admin-member-container .white-board {
+  height: 60vh;
+}

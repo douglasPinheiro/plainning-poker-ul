@@ -11,7 +11,7 @@ const CreateRoom = () => {
 
   const submitRoom = () => {
     createRoom(roomName, userName).then((r) =>
-      history.push(`/room/${r.data.code}`)
+      history.push(`/room/${r.data._id}`)
     );
   };
 
@@ -21,7 +21,7 @@ const CreateRoom = () => {
         <div className="CreateRoom-column-left">
           <div className="CreateRoom-wrapper">
             <div className="CreateRoom-middle">
-              Logo
+              <img id="img-door" src="/assets/door.jpg"></img>
               <div className="CreateRoom-inside">
                 Criar sala
                 <input

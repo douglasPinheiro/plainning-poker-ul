@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../../components/card/Card";
 import "./Member.css";
+import { getRoom } from "../../services/api";
 
-const Member = () => {
+const Member = ({ match }) => {
+  const roomId = match.params.roomId;
+  const [room, setRoom] = useState({});
+
+  useEffect(() => {
+    getRoom(roomId).then((r) => setRoom(r.data));
+  }, []);
   return (
     <div className="admin-member-container">
       <div className="other-container">
@@ -15,7 +22,7 @@ const Member = () => {
             </div>
             <div className="col-md-4 members-page">
               <div className="label-member">
-                <label>Nome da Sala</label>
+                <label>{room?.roomName}</label>
               </div>
             </div>
             <div className="col-md-2 page-members">

@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./AdminRoom.css";
+import Button from "react-bootstrap/Button";
 import Card from "../../components/card/Card";
 import Members from "../../components/members/Members";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { getRoom } from "../../services/api";
 
-const AdminRoom = () => {
+const AdminRoom = ({ match }) => {
+  const roomId = match.params.id;
+  const [room, setRoom] = useState({});
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    getRoom(roomId).then((r) => setRoom(r.data));
+  }, []);
+
+  const getLink = () => {
+    return `http://localhost:3000/join/${room?.code}`;
+  };
+
+  const changeCopied = () => {
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 5000);
+  };
+
   return (
     <div className="admin-room-container">
       <div className="my-container">
@@ -17,7 +39,7 @@ const AdminRoom = () => {
               </div>
               <div className="col-md-9">
                 <div className="label-room">
-                  <label>Nome da Sala que pode ser grande</label>
+                  <label>{room?.roomName}</label>
                 </div>
               </div>
             </div>
@@ -45,11 +67,23 @@ const AdminRoom = () => {
               </div>
               <div className="col-md-9">
                 <div className="label-profiles">
-                  <Members username="Fernanda Taketa"></Members>
-                  <Members username="Rodorfo Mahs"></Members>
-                  <Members username="Ernany Augusto"></Members>
-                  <Members username="Douglas da Costa"></Members>
-                  <Members username="Joao"></Members>
+                  <div className="label-profiles-container">
+                    <Members username="Fernanda Taketa"></Members>
+                    <Members username="Rodorfo Mahs"></Members>
+                    <Members username="Ernany Augusto"></Members>
+                    <Members username="Douglas da Costa"></Members>
+                    <Members username="Joao"></Members>
+                  </div>
+                  <div className="button-share">
+                    <CopyToClipboard
+                      text={getLink()}
+                      onCopy={() => changeCopied()}
+                    >
+                      <Button className={copied ? "copied" : ""}>
+                        {copied ? "Copiado" : "Compartilhar"}
+                      </Button>
+                    </CopyToClipboard>
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,6 +117,9 @@ const AdminRoom = () => {
                 <div className="col-md-3">
                   <Card />
                 </div>
+              </div>
+              <div className="reset-button">
+                <Button> Reiniciar </Button>
               </div>
             </div>
           </div>
