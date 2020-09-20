@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import "./CreateRoom.css";
 import Button from "react-bootstrap/Button";
 import { createRoom } from "../../services/api";
+import { useHistory } from "react-router-dom";
 
-function CreateRoom() {
+const CreateRoom = () => {
+  const history = useHistory();
   const [roomName, setRoomName] = useState("");
 
   const submitRoom = () => {
-    createRoom(roomName, "admin");
+    createRoom(roomName, "admin").then((r) =>
+      history.push(`/room/${r.data._id}`)
+    );
   };
 
   return (
@@ -34,6 +38,6 @@ function CreateRoom() {
       </div>
     </div>
   );
-}
+};
 
 export default CreateRoom;
