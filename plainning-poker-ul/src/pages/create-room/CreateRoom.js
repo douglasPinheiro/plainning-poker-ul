@@ -7,10 +7,11 @@ import { useHistory } from "react-router-dom";
 const CreateRoom = () => {
   const history = useHistory();
   const [roomName, setRoomName] = useState("");
+  const [userName, setUserName] = useState("");
 
   const submitRoom = () => {
-    createRoom(roomName, "admin").then((r) =>
-      history.push(`/room/${r.data._id}`)
+    createRoom(roomName, userName).then((r) =>
+      history.push(`/room/${r.data.code}`)
     );
   };
 
@@ -22,10 +23,14 @@ const CreateRoom = () => {
             <div className="CreateRoom-middle">
               Logo
               <div className="CreateRoom-inside">
-                Criar da sala
+                Criar sala
                 <input
-                  placeholder="Nome"
+                  placeholder="Nome da sala"
                   onKeyDown={(e) => setRoomName(e.target.value)}
+                />
+                <input
+                  placeholder="Nome do usuário"
+                  onKeyDown={(e) => setUserName(e.target.value)}
                 />
               </div>
               <Button onClick={submitRoom}>Criar</Button>

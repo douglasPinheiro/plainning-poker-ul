@@ -5,7 +5,7 @@ const CardBack = () => {
   return (
     <div className="poker-card">
       <img
-        src="../assets/logo.jpeg"
+        src="/assets/logo.jpeg"
         alt="card"
         className="card-logo"
         id="logo-big"
@@ -23,7 +23,7 @@ const Card = ({ number }) => {
       <div className="card-number">{number}</div>
       <div className="card-square">
         <img
-          src="../assets/logo.jpeg"
+          src="/assets/logo.jpeg"
           alt="card"
           className="card-logo"
           id="logo-small"

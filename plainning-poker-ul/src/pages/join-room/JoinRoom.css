@@ -1,4 +1,4 @@
-.CreateRoom {
+.JoinRoom {
   text-align: center;
   background-color: #8cb8c5;
   min-height: 100vh;
@@ -10,42 +10,42 @@
   color: white;
 }
 
-.CreateRoom-logo {
+.JoinRoom-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .CreateRoom-logo {
+  .JoinRoom-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.CreateRoom-link {
+.JoinRoom-link {
   color: #61dafb;
 }
 
-.CreateRoom-row {
+.JoinRoom-row {
   display: flex;
   width: 100%;
   height: 80vh;
 }
 
-.CreateRoom-column-left {
+.JoinRoom-column-left {
   flex: 40%;
 }
 
-.CreateRoom-column-right {
+.JoinRoom-column-right {
   flex: 60%;
 }
 
-.CreateRoom-column-right img {
+.JoinRoom-column-right img {
   max-width: 100%;
   max-height: 100%;
   margin-top: -30px;
 }
 
-.CreateRoom-wrapper {
+.JoinRoom-wrapper {
   background-color: #dedede;
   height: 90%;
   padding: 50px;
@@ -56,7 +56,7 @@
   text-align: center;
 }
 
-.CreateRoom-middle {
+.JoinRoom-middle {
   background-color: white;
   height: 95%;
   padding: 30px;
@@ -68,11 +68,11 @@
   font-weight: 600;
 }
 
-.CreateRoom-inside {
+.JoinRoom-inside {
   background-color: #9cd5ea;
   color: black;
   text-transform: uppercase;
-  height: 164px;
+  height: 136px;
   width: 87%;
   margin-top: 90px;
   padding-top: 20px;
@@ -81,7 +81,7 @@
   color: #3939b5;
   font-size: 18px;
 }
-.CreateRoom-middle button {
+.JoinRoom-middle button {
   background-color: #9cd5ea;
   border: 1px solid #9cd5ea;
   text-transform: uppercase;
@@ -92,13 +92,13 @@
   font-weight: 600;
 }
 
-.CreateRoom-middle button:hover {
+.JoinRoom-middle button:hover {
   background-color: #6bbbda;
   border: 1px solid #6bbbda;
   font-family: "Ubuntu", sans-serif;
 }
 
-.CreateRoom-inside input {
+.JoinRoom-inside input {
   border: none;
   outline: none;
   height: 25px;
@@ -107,7 +107,7 @@
   margin-top: 18px;
 }
 
-.CreateRoom-tablet-button {
+.JoinRoom-tablet-button {
   width: 50px;
   height: 50px;
   border: 2px solid #383838;
@@ -115,6 +115,6 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 78px;
+  top: 100px;
   box-shadow: -5px 5px 5px -5px rgba(0, 0, 0, 0.45);
 }

@@ -10,3 +10,9 @@ export const createRoom = (roomName, userName) => {
     userName,
   });
 };
+
+export const joinRoom = (roomId, userName) => {
+  return instance.post(`rooms/join/${roomId}`, {
+    name: userName,
+  });
+};

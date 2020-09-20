@@ -1,0 +1,65 @@
+.other-container {
+  padding-top: 115px;
+  margin: 0px 200px;
+}
+
+.admin-member-container {
+  background-color: #8cb8c5;
+  height: 100vh;
+  text-align: -webkit-center;
+}
+
+.label-member {
+  background-color: white;
+  height: 93px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.label-member label {
+  font-size: 45px;
+  text-align: center;
+}
+
+.history-icon {
+  background-color: white;
+  height: 10vh;
+  border-radius: 6px;
+  width: 125px;
+}
+
+.history-label {
+  background-color: white;
+  height: 93px;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+}
+
+.history-label textarea {
+  margin: 20px 22px;
+}
+
+.icon-room {
+  width: 125px;
+}
+
+.page-members {
+  text-align: center;
+}
+
+.admin-member-container .board-container {
+  margin-top: 40px;
+}
+
+.card-content {
+  text-align: -webkit-center;
+}
+
+.white-board {
+  width: 75%;
+}
+
+.description-container {
+  width: 75%;
+}

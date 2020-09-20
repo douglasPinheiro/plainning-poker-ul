@@ -12,7 +12,7 @@ const AdminRoom = () => {
             <div className="row">
               <div className="col-md-3">
                 <div className="icon-room">
-                  <img id="img-door" src="../assets/door.jpg"></img>
+                  <img id="img-door" src="/assets/door.jpg"></img>
                 </div>
               </div>
               <div className="col-md-9">
@@ -24,7 +24,7 @@ const AdminRoom = () => {
             <div className="row">
               <div className="col-md-3">
                 <div className="icon-history">
-                  <img id="img-door" src="../assets/book.jpg"></img>
+                  <img id="img-door" src="/assets/book.jpg"></img>
                 </div>
               </div>
               <div className="col-md-9">
@@ -40,16 +40,16 @@ const AdminRoom = () => {
             <div className="row">
               <div className="col-md-3">
                 <div className="icon-profiles">
-                  <img id="img-door" src="../assets/members.jpg"></img>
+                  <img id="img-door" src="/assets/members.jpg"></img>
                 </div>
               </div>
               <div className="col-md-9">
                 <div className="label-profiles">
-                  <Members></Members>
-                  <Members></Members>
-                  <Members></Members>
-                  <Members></Members>
-                  <Members></Members>
+                  <Members username="Fernanda Taketa"></Members>
+                  <Members username="Rodorfo Mahs"></Members>
+                  <Members username="Ernany Augusto"></Members>
+                  <Members username="Douglas da Costa"></Members>
+                  <Members username="Joao"></Members>
                 </div>
               </div>
             </div>
